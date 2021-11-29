@@ -2,15 +2,15 @@
 error_reporting(E_ALL);
 require_once "conexion.php";
 $obj = json_decode(file_get_contents("php://input"));
-$stmt = $db->prepare("SELECT usuario, nombre, rol FROM usuario WHERE usuario like CONCAT ('%', ?, '%') OR nombre like CONCAT ('%', ?, '%') OR rol like CONCAT ('%', ?, '%')");
+$stmt = $db->prepare("SELECT Nombre, Apellidos, Correo FROM registro_cliente WHERE Nombre like CONCAT ('%', ?, '%') OR Apellidos like CONCAT ('%', ?, '%')OR Correo like CONCAT ('%', ?, '%')");
 $stmt->bind_param('sss',$obj->texto,$obj->texto,$obj->texto);
-$stmt->bind_result($usuario,$nombre,$rol);
+$stmt->bind_result($Nombre,$Apellidos,$Correo);
 $stmt->execute();
 $arr = array();
 while($stmt->fetch()){
-    $arr[] = array('usuario' => $usuario,
-       'nombre' => $nombre,
-       'rol' => $rol);
+    $arr[] = array('Nombre' => $Nombre,
+       'Apellidos' => $Apellidos,
+       'Correo' => $Correo);
 }
 $stmt->close();
 echo json_encode($arr);

@@ -102,7 +102,7 @@
   </div>
        <!-- Termina Modal-->
 
-       <!-- Modal Modificar Usuario-->
+       <!-- Modal del Boton verde de Modificar Usuario-->
   <div id="ModUser"  class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
     
@@ -120,6 +120,11 @@
                 <div class="panel-body">
                    <form class="form-horizontal" name="formMod" >
 
+                   <div class="form-group">
+                      <label for="nombre" class="col-md-2 control-label">ID</label>
+                      <div class="col-md-6"><input type="int" class="form-control" id="Id_Cliente" ng-model="modUsuario.Id_Cliente" placeholder="Id_Cliente" required></div>
+                      </div>
+
                       <div class="form-group">
                       <label for="nombre" class="col-md-2 control-label">Nombre</label>
                       <div class="col-md-6"><input type="text" class="form-control" id="Nombre" ng-model="modUsuario.Nombre" placeholder="Nombre" required></div>
@@ -127,17 +132,17 @@
 
                       <div class="form-group">
                       <label for="password" class="col-md-2 control-label">Apellidos</label>
-                      <div class="col-md-6"><input type="text" class="form-control" id="Apellidos" ng-model="usuario.Apellidos" placeholder="Apellidos" required></div>
+                      <div class="col-md-6"><input type="text" class="form-control" id="Apellidos" ng-model="modUsuario.Apellidos" placeholder="Apellidos" required></div>
                       </div>
 
                       <div class="form-group">
                       <label for="password" class="col-md-2 control-label">Correo</label>
-                      <div class="col-md-6"><input type="text" class="form-control" id="Correo" ng-model="usuario.Correo" placeholder="Correo" required></div>
+                      <div class="col-md-6"><input type="text" class="form-control" id="Correo" ng-model="modUsuario.Correo" placeholder="Correo" required></div>
                       </div>
 
                       <div class="form-group">
                       <label for="password" class="col-md-2 control-label">Contraseña</label>
-                      <div class="col-md-6"><input type="password" class="form-control" id="password" ng-model="usuario.pass" placeholder="Contraseña" required></div>
+                      <div class="col-md-6"><input type="password" class="form-control" id="password" ng-model="modUsuario.pass" placeholder="Contraseña" required></div>
                       </div>
 
                          
