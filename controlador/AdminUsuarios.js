@@ -7,8 +7,9 @@ $scope.modUsuario={};
 $scope.usuario={};
 $scope.info={};
 
+//Boton de Eliminar
 $scope.eliminar = function(u){
-var mensaje = confirm("¿Desea eliminar al usuario: "+u.usuario+"?");
+var mensaje = confirm("¿Desea eliminar al usuario de nombre: "+u.Nombre+"?");
 if(mensaje){
  $http.post('./modelo/eliminarUsuario.php',u)
 	.success(function(data,status,headers,config){
@@ -18,7 +19,7 @@ if(mensaje){
 	});
  }
 }
-
+//Actualiza los datos modificados del boton verde
 $scope.actualizar = function(){
 	$http.post('./modelo/modificarUsuario.php',$scope.modUsuario)
 	.success(function(data,status,headers,config){
@@ -28,7 +29,7 @@ $scope.actualizar = function(){
 		alert("Error BD");
 	});
 }
-
+//El boton de modificar
 $scope.modificar = function(u){
 	$scope.modUsuario = u;
 	$('#ModUser').modal('show');
