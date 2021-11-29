@@ -17,16 +17,11 @@ html
     padding-right: 10%;
 }
 
-footer.page-footer {
-    background-color: #f65105;
-    color:white;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    height: 65px;
-}
+ 
 nav.navbar {
     background-color: #0d47a1;
 }
 
-body {background-color: ligthblue;}
+body { background: #0576e6ad;
+    background: -webkit-linear-gradient(to right, #021c7971, #0576e669), url(../imagenes/puente.jpg);
+    background: linear-gradient(to right, #021c7975, #0576e670), url(../imagenes/puente.jpg);}

@@ -6,7 +6,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>MiAlvarado</title>
  <!-- Bootstrap -->
- <link rel="icon" type="image/png" href="./img/neto.png" />
+ <link rel="icon" type="image/png" href="./img/MiAlvatado.png" />
  <link rel="stylesheet" href="./css/bootstrap.min.css" >
  <link rel="stylesheet" href="./css/margenes.css" >
  <script src="./controlador/jquery.js"></script>
@@ -23,8 +23,8 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>                        
      </button>  
-     <IMG class="navbar-brand" SRC="./img/neto.png"> </IMG>
-     <a class="navbar-brand" href="">MiAlvarado</a>
+     <IMG class="navbar-brand" SRC="./img/MIA-1.png"> </IMG>
+     <a class="navbar-brand" href=""></a>
     </div>
   <div class="collapse navbar-collapse" id="myNavbar">
    <ul class="nav navbar-nav">
