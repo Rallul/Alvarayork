@@ -10,6 +10,7 @@
             </form>
             
             <br>
+            <!-- Buscador -->
             <form class="form-horizontal" name="formBusqueda">
             <div class="input-group col-md-6">      
               <div class="input-group-btn">
@@ -46,7 +47,7 @@
             
             <br>
            
-  <!-- Modal Usuario-->
+  <!-- Modal Usuario agrega datos a la DB mediante le boton de arriba de la tabla-->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
     
