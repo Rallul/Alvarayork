@@ -33,7 +33,7 @@ $scope.modificar = function(u){
 	$scope.modUsuario = u;
 	$('#ModUser').modal('show');
 }
-
+//Busca en la barra de arriba
 $scope.buscar = function(){
 	$http.post('./modelo/buscarUsuarios.php',$scope.info)
 	.success(function(data,status,headers,config){
@@ -43,7 +43,7 @@ $scope.buscar = function(){
 	});
 }
 
-
+// Muestra las cosas en la tabla 
 //  $('#ModalModUser').modal('show');
 $scope.consultar = function(){
 	$http.post('./modelo/consultarUsuarios.php')
@@ -53,7 +53,7 @@ $scope.consultar = function(){
 		alert("Error BD");
 	});
 }
-
+// Guarda con el modal que sale al apretar el boton de agrtegar
 $scope.guardar = function(){
 	$http.post('./modelo/guardarUsuario.php',$scope.usuario)
 	.success(function(data,status,headers,config){
